@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #363333;
+}
+#question{
+    color: white;
+}
+.btn{
+    color: black;
+    background-color: white;
+}
