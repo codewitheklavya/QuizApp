@@ -71,6 +71,7 @@ function startquiz(){
 }
 
 function showQuestion(){
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -83,6 +84,13 @@ function showQuestion(){
     });
 }
 
+function resetState(){
+    nextButton.style.display = "none";
+    while(answerButton.firstChild){
+        answerButton.removeChild(answerButton.firstChild);
+    }
+}
 
+startquiz();
 
 
