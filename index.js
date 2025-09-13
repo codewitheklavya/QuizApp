@@ -23,7 +23,7 @@ const questions = [
             {text: "Captain America", correct: false},
             {text: "Lokesh", correct: false},
             {text: "Amit", correct: false},
-            {text: "tonny stark", correct: true},
+            {text: "loki", correct: true},
         ]
     },
     {
@@ -100,6 +100,7 @@ function selectAnswer(e){
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
         selectedBtn.classList.add("correct");
+        score++;
     }else{
         selectedBtn.classList.add("incorrect"); 
     }
@@ -111,6 +112,30 @@ function selectAnswer(e){
     });
     nextButton.style.display = "block";
 }
+
+function showScore(){
+    resetState();
+    questionElement.innerHTML = `you scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "play Again";
+    nextButton.style.display = "block";
+}
+
+function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
+    }else{
+        showScore();
+    }
+}
+
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    }else{
+        startquiz();
+    }
+})
 
 startquiz();
 
