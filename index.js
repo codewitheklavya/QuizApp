@@ -22,8 +22,8 @@ const questions = [
         answer: [
             {text: "Captain America", correct: false},
             {text: "Lokesh", correct: false},
-            {text: "tonny stark", correct: true},
             {text: "Amit", correct: false},
+            {text: "tonny stark", correct: true},
         ]
     },
     {
@@ -35,6 +35,25 @@ const questions = [
             {text: "hammer king", correct: false},
         ]
     },
+    {
+        question: "If Parliament was a classroom, what subject would it be?",
+        answer: [
+            {text: "History", correct: false},
+            {text: "drama", correct: true},
+            {text: "Science", correct: false},
+            {text: "english", correct: false},
+        ]
+    },
+    {
+        question: "what is the national sport of politicians during election?",
+        answer: [
+            {text: "kabaddi", correct: false},
+            {text: "hockey", correct: false},
+            {text: "football", correct: false},
+            {text: "blame game", correct: true},
+        ]
+    },
+
 ]
 
 
