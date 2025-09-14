@@ -53,7 +53,42 @@ const questions = [
             {text: "blame game", correct: true},
         ]
     },
-
+    {
+        question: "what is the national animal of india?",
+        answer: [
+            {text: "lion", correct: false},
+            {text: "dog", correct: false},
+            {text: "tiger", correct: true},
+            {text: "elephant", correct: false},
+        ]
+    },
+    {
+        question: "which country has tajmahal?",
+        answer: [
+            {text: "australia", correct: false},
+            {text: "india", correct: true},
+            {text: "bangladesh", correct: false},
+            {text: "canada", correct: false},
+        ]
+    },
+    {
+        question: "which country has more worldcup trophy in cricket?",
+        answer: [
+            {text: "australia", correct: true},
+            {text: "india", correct: false},
+            {text: "bangladesh", correct: false},
+            {text: "england", correct: false},
+        ]
+    },
+    {
+        question: "which country has heightest population?",
+        answer: [
+            {text: "australia", correct: false},
+            {text: "india", correct: true},
+            {text: "china", correct: false},
+            {text: "USA", correct: false},
+        ]
+    },
 ]
 
 const questionElement = document.getElementById("question");
